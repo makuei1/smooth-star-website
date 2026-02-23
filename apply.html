@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Smooth Star application form</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <!-- ========================================= -->
+        <!-- BOOTSTRAP ICONS -->
+        <!-- ========================================= -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- ========================================= -->
+        <!-- GOOGLE FONT -->
+        <!-- ========================================= -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <style>
+            form .form-control:focus {
+                border-color: #ffc107;
+                box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+            }
+
+            form h5 {
+                border-left: 4px solid #ffc107;
+                padding-left: 10px;
+            }
+        </style>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <!-- Header -->
+                <div class="text-center">
+                    <img
+                        src="assets/images/logo.jpg"
+                        alt="smooth star logo"
+                        class="rounded-circle"
+                        width="50"
+                        height="50"
+                    />
+                </div>
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Student Application Form</h2>
+                    <p class="text-muted">
+                        Please complete all required fields below to apply for
+                        admission at Smooth Star Leadership Institute.
+                    </p>
+                    <div
+                        class="mx-auto bg-warning"
+                        style="width: 60px; height: 3px"
+                    ></div>
+                </div>
+
+                <form id="applicationForm" novalidate>
+                    <!-- ================= PERSONAL DETAILS ================= -->
+                    <h5 class="fw-bold mb-3">Personal Details</h5>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label class="form-label">
+                                Full Name <span class="text-danger">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Enter full name"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Full name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">
+                                Email Address <span class="text-danger">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                placeholder="example@email.com"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">
+                                Phone Number <span class="text-danger">*</span>
+                            </label>
+                            <input
+                                type="tel"
+                                class="form-control"
+                                placeholder="Enter phone number"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Phone number is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">
+                                Date of Birth <span class="text-danger">*</span>
+                            </label>
+                            <input type="date" class="form-control" required />
+                            <div class="invalid-feedback">
+                                Date of birth is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= GUARDIAN DETAILS ================= -->
+                    <h5 class="fw-bold mb-3">Guardian Details</h5>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label class="form-label">
+                                Guardian Name <span class="text-danger">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Enter guardian's full name"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Guardian name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">
+                                Guardian Phone
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input
+                                type="tel"
+                                class="form-control"
+                                placeholder="Enter guardian phone number"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Guardian phone is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= SCHOOL DETAILS ================= -->
+                    <h5 class="fw-bold mb-3">Educational Background</h5>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label class="form-label">
+                                Current / Last School
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Enter school name"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                School name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">
+                                Year of Completion
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                placeholder="e.g. 2024"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Year of completion is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= DOCUMENT UPLOAD ================= -->
+                    <h5 class="fw-bold mb-3">Required Documents</h5>
+
+                    <div class="mb-4">
+                        <label class="form-label">
+                            Upload ID or Birth Certificate
+                            <span class="text-danger">*</span>
+                        </label>
+                        <input type="file" class="form-control" required />
+                        <div class="invalid-feedback">
+                            Please upload a valid identification document.
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="text-center">
+                        <button
+                            type="submit"
+                            id="submitBtn"
+                            class="btn btn-dark btn-lg px-5"
+                            disabled
+                        >
+                            Submit Application
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script>
+            const form = document.getElementById("applicationForm");
+            const submitBtn = document.getElementById("submitBtn");
+            const inputs = form.querySelectorAll("input[required]");
+
+            function checkFormValidity() {
+                let allValid = true;
+
+                inputs.forEach(input => {
+                    if (!input.checkValidity()) {
+                        allValid = false;
+                    }
+                });
+
+                submitBtn.disabled = !allValid;
+            }
+
+            inputs.forEach(input => {
+                input.addEventListener("input", () => {
+                    if (input.checkValidity()) {
+                        input.classList.remove("is-invalid");
+                    } else {
+                        input.classList.add("is-invalid");
+                    }
+                    checkFormValidity();
+                });
+            });
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                inputs.forEach(input => {
+                    if (!input.checkValidity()) {
+                        input.classList.add("is-invalid");
+                    }
+                });
+
+                if (!submitBtn.disabled) {
+                    alert("Application submitted successfully!");
+                    form.reset();
+                    submitBtn.disabled = true;
+                }
+            });
+        </script>
+    </body>
+</html>

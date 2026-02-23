@@ -1,0 +1,178 @@
+/* =========================================
+   Global
+========================================= */
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #212529;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+.hero-bg {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("/assets/images/hero_img.jpeg");
+
+    background-size: cover; /* cover entire container */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat; /* avoid repetition */
+
+    min-height: 100vh; /* optional, full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fefe; /* text color */
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+/* =========================================
+   Buttons
+========================================= */
+.btn-dark {
+    background-color: #212529;
+    border-color: #212529;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+.btn-outline-dark {
+    border-color: #fff;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #212529;
+    color: #ffc107;
+    border-color: #212529;
+}
+
+/* =========================================
+   Section Headings
+========================================= */
+section h2.fw-bold {
+    font-weight: 700;
+}
+
+section .bg-warning {
+    height: 3px;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+}
+
+/* =========================================
+   Cards (Vision, Mission, Core Values, Why Choose Us)
+========================================= */
+.card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card .d-inline-flex,
+.card .mb-3 i {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .d-inline-flex,
+.card:hover .mb-3 i {
+    transform: scale(1.1);
+}
+
+/* Why Choose Us items */
+.py-5.bg-dark .col-md-6.col-lg-3 div {
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.py-5.bg-dark .col-md-6.col-lg-3 div:hover {
+    transform: translateY(-5px);
+    color: #ffc107;
+}
+
+/* =========================================
+   Hero Section
+========================================= */
+header.vh-100 {
+    background-color: #f8f9fa;
+}
+
+header .bio {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+/* =========================================
+   About Section
+========================================= */
+.about-section img {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-section img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   Footer
+========================================= */
+footer {
+    background-color: #1a1a1a; /* Slightly lighter than dark sections */
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
+
+footer hr {
+    opacity: 0.3;
+    margin: 1.5rem 0;
+}
+footer .text-muted {
+    color: #fefe !important;
+    font-weight: bold;
+}
+
+/* =========================================
+   Responsive Tweaks
+========================================= */
+@media (max-width: 991px) {
+    header.vh-100 {
+        padding-top: 100px;
+    }
+}
