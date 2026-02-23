@@ -69,16 +69,5 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    // 4. Enrollment Button Feedback
-    // Just a simple UI feedback for the "Enroll Now" CTA
-    /* const enrollBtn = document.querySelector('.btn-dark');
-    if (enrollBtn) {
-        enrollBtn.addEventListener('click', (e) => {
-            if (enrollBtn.getAttribute('href') === '#') {
-                e.preventDefault();
-                alert('Registration is currently opening. Please contact us at 0928789887 for immediate enrollment!');
-            }
-        });
-    }
-
-}); */
+   
+});

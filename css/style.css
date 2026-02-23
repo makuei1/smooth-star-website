@@ -15,10 +15,11 @@ h5,
 h6 {
     font-weight: 600;
 }
+
 .hero-bg {
     background:
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("/assets/images/hero_img.jpeg");
+        url("../assets/images/hero_img.jpeg");
 
     background-size: cover; /* cover entire container */
     background-position: center; /* center the image */
