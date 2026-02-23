@@ -7,7 +7,7 @@ Built with clean structure, professional UI design, and scalable layout principl
 ---
 
 ## 🚀 Live Preview
-https://www.makuei1.github.io/smooth-star-website/
+https://makuei1.github.io/smooth-star-website/
 
 
 ---
